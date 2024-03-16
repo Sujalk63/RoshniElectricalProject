@@ -865,7 +865,7 @@ textarea.input {
     flex-direction: column;
     background-color: #132549;
     position: absolute;
-    top: 100px;
+    top: 60px;
     right: 5px;
     width: 40%;
     z-index: 99;
