@@ -291,7 +291,8 @@ body {
 
 .item {
   width: 19vw;
-  height: auto;
+  /* added fixed height for now but will be auto */
+  height: 40vh;
   /* height: auto; */
   /* height has to be auto once the images are recieved */
   background-color: #E7E7E7;
@@ -979,7 +980,8 @@ textarea.input {
 
   .item {
     min-width: 45vw;
-    /* height: auto; */
+    /* added height in mobile view */
+    height: auto; 
   }
 
   .content{
