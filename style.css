@@ -50,7 +50,23 @@ body {
   background-color: #F5F5F5;
   border-bottom: 1px solid #c4c1c1;
   background-color: #132549;
+  position: relative;
+  z-index: 1;
 }
+
+.nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  left: -30%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #0E182E 50%, transparent 50%);
+  z-index: -1;
+}
+
+
 
 .icon {
   display: none;
@@ -884,6 +900,7 @@ textarea.input {
   .nav h1 {
     margin: 0;
     font-size: 5vw;
+    padding-left: 20vw;
   }
 
   /*? First page - Landing */
