@@ -842,7 +842,7 @@ textarea.input {
 @media (max-width: 768px) {
 
   body, html{
-    scroll-padding: 15vw;
+    scroll-padding: 17vw;
   }
 
   /* Navbar */
