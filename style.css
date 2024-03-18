@@ -841,6 +841,10 @@ textarea.input {
 /*? Media Query Mobile */
 @media (max-width: 768px) {
 
+  body, html{
+    scroll-padding: 15vw;
+  }
+
   /* Navbar */
   .nav {
     position: fixed;
