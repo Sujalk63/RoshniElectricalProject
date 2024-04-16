@@ -47,11 +47,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1.5vw 30vw;
-  background-color: #F5F5F5;
   /* border-bottom: 1px solid #c4c1c1; */
   background-color: #132549;
   position: relative;
   z-index: 1;
+  
 }
 
 .nav::before {
