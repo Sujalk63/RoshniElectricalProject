@@ -1055,7 +1055,12 @@ textarea.input {
   .item {
     min-width: 45vw;
     /* added height in mobile view */
-    height: auto; 
+    min-height: 35vh; 
+  }
+
+  .item-wrapper p{
+    font-size: 3vw;
+    /* line-height: 1px; */
   }
 
   .content{
