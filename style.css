@@ -175,15 +175,23 @@ body {
   border-radius: 0.5vw;
 }
 
-.left a {
+.cu {
   padding: 1vw 1.5vw;
   text-decoration: none;
   /* color: #0E182E; */
   color: white;
   font-weight: 600;
   background-color:#0E182E;
+  border: 1px solid #0E182E;
   margin: 1vw 0;
   border-radius: var(--borderRadius);
+  transition: background-color 0.3s ease;
+}
+
+.cu:hover{
+  background-color:#E7E7E7; 
+  color:#0E182E;
+  border: 1px solid gray;
 }
 
 .right {
@@ -396,7 +404,7 @@ body {
   height: auto;
   background-image: url('assets/heroAndAbout/aboutPage.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -432,6 +440,27 @@ body {
   text-align: center;
   font-size: 1vw;
 }
+
+.mobilePara{
+  display: none;
+}
+
+.aboutUScu{
+  z-index: 99;
+   background-color: white; 
+   color: #132549;
+  border: 1px solid white;
+   transition: background-color 0.3s ease;
+
+}
+
+.aboutUScu:hover{
+  background-color:#0E182E; 
+  color: white;
+  border: 1px solid gray;
+}
+
+
 
 /* dealers section start */
 
@@ -798,7 +827,7 @@ textarea.input {
   position: relative;
   width: 100%;
   min-height: 60px;
-  padding: 5px 50px;
+  padding: 5px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -811,6 +840,7 @@ textarea.input {
   font-size: 1rem;
   font-weight: 300;
   color: white;
+  text-align: center;
 }
 
 /*! Media Queries  */
@@ -988,10 +1018,10 @@ textarea.input {
     /* padding: 15% 0; */
     padding-top: 25%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     /* added */
-    height: 70vh; 
+    height: auto; 
     /* chnaged from auto to 70 */
 
   }
@@ -1059,6 +1089,7 @@ textarea.input {
 
   .secondPage p {
     font-size: 3vw;
+    width: 80%;
   }
 
   .item {
@@ -1086,13 +1117,41 @@ textarea.input {
   }
 
   /* About Us */
+
+  .thirdPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1vw; */
+  }
+
+
   .thirdPage h1 {
     font-size: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
   }
 
   .thirdPage p {
     width: 80%;
-    text-align: justify;
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  .desktopPara{
+    display: none;
+  }
+
+  .aboutUScu{
+    margin-top: 7vw;
+    margin-bottom: 3vw;
+  }
+
+  .aboutUScu{
+    padding: 1.5vw 1.5vw;
+    text-decoration: none;
+    font-weight: 550;
     font-size: 3vw;
   }
 
