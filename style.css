@@ -31,6 +31,12 @@ body {
 
 }
 
+.prev, .next{
+  background-color: bisque !important;
+  color: white;
+  
+}
+
 
 /* first page start */
 
@@ -103,20 +109,22 @@ body {
   background-color: #F5F5F5;
   position: relative;
   z-index: 1;
-  background-image: url('assets/heroAndAbout/heroPage.jpg');
+  /* background-image: url('assets/heroAndAbout/heroPage.jpg'); */
   background-size: cover;
   background-position: center;
 }
 
+
+
 /* .landingPage::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(14, 24, 46, 0.75);
-  
+  background-color: rgba(14, 24, 46, 0.9);
+  z-index: -1;
 } */
 
 .landingPage::before {
@@ -126,10 +134,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(300deg, #E7E7E7 50%, transparent 50%); */
-  background-color: rgba(14, 24, 46, 0.9);
+  background: linear-gradient(300deg, #E7E7E7 50%, transparent 50%);
   z-index: -1;
 }
+
 
 
 .left,
@@ -152,7 +160,7 @@ body {
   font-size: 4.5vw;
   line-height: 5vw;
   color: #0E182E;
-  color: white;
+  /* color: white; */
   /* color: #132549; */
 
 
@@ -162,17 +170,18 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.5vw;
   color: #b3b2b2;
-  color: white;
-  background-color: rgba(78, 85, 97, 0.75);
+  /* color: white; */
+  /* background-color: rgba(78, 85, 97, 0.75); */
   border-radius: 0.5vw;
 }
 
 .left a {
   padding: 1vw 1.5vw;
   text-decoration: none;
-  color: #0E182E;
+  /* color: #0E182E; */
+  color: white;
   font-weight: 600;
-  background-color:white;
+  background-color:#0E182E;
   margin: 1vw 0;
   border-radius: var(--borderRadius);
 }
@@ -182,7 +191,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(78, 85, 97, 0.75);
+  /* background-color: rgba(78, 85, 97, 0.75); */
   /* background-color: white; */
   border-radius: 2vw;
   padding: 1vw 1.7vw;
@@ -500,7 +509,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  /* background-image: url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+  background-image: url(assets/heroAndAbout/heroPage.jpg);
   background-size: cover;
   background-position: center;
   background-color: #132549;
@@ -963,18 +973,16 @@ textarea.input {
     background-size: cover;
   }
 
-  .landingPage::before {
+  /* .landingPage::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(300deg, #E7E7E7 50%, transparent 50%); */
-    /* background-color: rgba(49, 49, 96, 0.6); */
     background-color: rgba(14, 24, 46, 0.75);
     z-index: -1;
-  }
+  } */
 
   .landingPage {
     /* padding: 15% 0; */
@@ -983,7 +991,8 @@ textarea.input {
     justify-content: center;
     align-items: center;
     /* added */
-    height: auto; 
+    height: 70vh; 
+    /* chnaged from auto to 70 */
 
   }
 
