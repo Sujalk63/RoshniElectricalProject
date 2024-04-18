@@ -100,6 +100,10 @@ body {
   color: white;
 }
 
+.mobileNavAbout{
+  display: none;
+}
+
 .landingPage {
   height: auto;
   display: flex;
@@ -383,6 +387,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: 1vw;
   /* background-color: #132549; */
 }
 
@@ -981,6 +986,14 @@ textarea.input {
     /* margin: 1vw 0; */
   }
 
+  .desktopNavAbout{
+    display: none;
+  }
+
+  .mobileNavAbout{
+    display: block;
+  }
+
   .nav {
     width: 100%;
     flex-direction: row;
@@ -1104,6 +1117,9 @@ textarea.input {
     height: inherit
   }
 
+  .item-wrapper a{
+    font-size: 2.7vw;
+  }
   .content{
     gap:15px;
     padding-left: 4px;
